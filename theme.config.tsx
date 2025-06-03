@@ -1,18 +1,28 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import { DocsThemeConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
-  project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
-  },
+  logo: (
+    <span style={{ display: 'flex', alignItems: 'center' }}>
+      <img
+      src="https://beta.bloxgrow.best/static/logo.png"
+      alt="Blox-Grow Logo"
+      style={{ height: 32, marginRight: 8 }}
+      />
+      <span>Blox-Grow Knowledge Base</span>
+    </span>
+  ),
   chat: {
-    link: 'https://discord.com',
+    link: 'https://discord.bloxgrow.best/'
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  feedback: {
+    content: null
+  },
+  editLink: {
+    content: null
+  },
   footer: {
-    text: 'Nextra Docs Template',
+    content: 'Blox-Grow © All rights reserved.'
   },
-}
+};
 
-export default config
+export default config;
